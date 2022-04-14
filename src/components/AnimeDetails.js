@@ -41,7 +41,7 @@ export default function AnimeDetails(){
                         </Stack>
                         <div>
                             <Tooltip title="Promo Poster">
-                                <img src= {indvAnimeDetail.image} style={{minWidth:"200px", maxWidth:"300px", width:"100%"}}></img>
+                                <img src= {indvAnimeDetail.image} alt="promo_poster" style={{minWidth:"200px", maxWidth:"300px", width:"100%"}}></img>
                             </Tooltip>
                             {indvAnimeDetail.people && <People {...indvAnimeDetail}/>}
                         </div>

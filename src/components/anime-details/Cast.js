@@ -2,7 +2,7 @@ import { Typography, Container } from "@mui/material";
 import { useFetchAll } from '../useFetch';
 
 export default function Cast(props){
-    const {data:people, isPending, error} = useFetchAll(props.people);
+    const {data:people} = useFetchAll(props.people);
     console.log(people);
 
     return(
