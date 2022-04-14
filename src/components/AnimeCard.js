@@ -11,7 +11,7 @@ export default function AnimeCard(props) {
   return (
     <Tooltip title={`Click to know more about "${props.title}"`}>
       <Link to={`/AnimeDetails/${props.id}`} style={{textDecoration: 'none'}}>
-        <Card className="cards" sx={{ maxWidth: 200, maxHeight: 420, margin: "20px" }}>
+        <Card className="cards" sx={{ maxWidth: 200, maxHeight: 420, margin: "15px" }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -20,19 +20,19 @@ export default function AnimeCard(props) {
               alt={props.title}
             />
             <CardContent sx={{padding:1}}>
-              <Typography gutterBottom variant="h6">
+              <Typography gutterBottom variant="h6" fontFamily={"Poppins"} fontWeight={600}>
                 { props.title }
               </Typography>
 
-              <Typography gutterBottom variant="body3">
+              <Typography gutterBottom variant="body3" fontFamily={"Poppins"} fontWeight={300}>
                 { `${props.release_date} ` }
               </Typography>
 
-              <Typography gutterBottom variant="body3" fontWeight={700}>
+              <Typography gutterBottom variant="body3" fontFamily={"Poppins"} fontWeight={500}>
                 { props.director }
               </Typography>
               
-              <Typography className='desc' variant="body2" color="text.secondary" marginTop={1} >
+              <Typography className='desc' variant="body2" color="text.secondary" marginTop={1} marginLeft={1} marginRight={1} fontFamily={"Poppins"} fontWeight={300}>
                   "{ props.description }"
               </Typography>
             </CardContent>

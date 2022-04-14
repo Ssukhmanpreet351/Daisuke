@@ -5,7 +5,7 @@ import AnimeList from './components/AnimeList';
 import AnimeDetails from './components/AnimeDetails';
 import NotFound from './components/NotFound';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-
+  
 function App() {
   return (
     <Router>

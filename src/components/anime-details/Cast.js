@@ -7,10 +7,10 @@ export default function Cast(props){
 
     return(
         <Container sx={{paddingTop:5,paddingBottom:2}}>
-            <Typography variant="h6" textAlign="left" fontWeight={700}>
+            <Typography variant="h6" textAlign="left" fontFamily={"Poppins"} fontWeight={600}>
                 Cast:
             </Typography>
-            <Typography textAlign= "left" component="div" display="flex" flexDirection= "row" flexWrap="wrap">
+            <Typography fontFamily={"Poppins"} fontWeight={400} textAlign= "left" component="div" display="flex" flexDirection= "row" flexWrap="wrap">
                 {
                     people && people.map((person, key)=>{
                         return (
