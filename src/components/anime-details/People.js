@@ -4,7 +4,7 @@ import { useFetchAll } from '../useFetch';
 
 export default function People(props){
     const {data:people} = useFetchAll(props.people);
-    console.log(people);
+    // console.log(people);
 
     return(
         <Box>

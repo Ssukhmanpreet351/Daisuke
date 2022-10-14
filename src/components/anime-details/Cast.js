@@ -3,7 +3,7 @@ import { useFetchAll } from '../useFetch';
 
 export default function Cast(props){
     const {data:people} = useFetchAll(props.people);
-    console.log(people);
+    // console.log(people);
 
     return(
         <Container sx={{paddingTop:5,paddingBottom:2}}>
